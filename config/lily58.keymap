@@ -14,7 +14,7 @@
         hold_word_caps: hold_word_caps {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_WORD_CAPS";
-            bindings = <&kp>, <&caps_word>;
+            bindings = <&sk>, <&caps_word>;
 
             #binding-cells = <2>;
             tapping-term-ms = <50>;
@@ -116,7 +116,7 @@
 &none  &kp GRAVE      &kp EXCLAMATION   &kp DQT         &kp SINGLE_QUOTE      &none                                             &none            &kp PLUS               &kp MINUS        &kp STAR           &kp SLASH         &none
 &none  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &double_it AMPERSAND                              &double_it PIPE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &none
 &none  &none          &none             &none           &none                 &none                 &kp SEMICOLON    &kp COLON  &none            &none                  &none            &none              &none             &none
-                                        &none           &none                 &none                 &none            &kp EQUAL  &none            &none                  &none
+                                        &none           &none                 &none                 &trans           &kp EQUAL  &none            &none                  &none
             >;
         };
     };
