@@ -37,6 +37,15 @@
         };
     };
 
+    macros {
+        double_it: double_it {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "DOUBLE_IT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -49,11 +58,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp GRAVE                     &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                          &kp N6          &kp N7    &kp N8     &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB                       &kp Q   &kp W   &kp E     &kp R     &kp T                                           &kp Y           &kp U     &kp I      &kp O    &kp P     &kp MINUS
-&hold_word_caps LEFT_SHIFT 0  &kp A   &kp S   &kp D     &kp F     &kp G                                           &kp H           &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL                     &kp Z   &kp X   &kp C     &kp V     &kp B                   &kp LBKT     &kp RBKT   &kp N           &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                                              &kp LALT  &kp LGUI  &key_or_layer 1 ESCAPE  &kp ENTER    &kp SPACE  &tapdancelayer  &kp BSPC  &kp RGUI
+&kp GRAVE                     &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                  &kp N6          &kp N7    &kp N8     &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB                       &kp Q   &kp W   &kp E     &kp R     &kp T                                   &kp Y           &kp U     &kp I      &kp O    &kp P     &kp MINUS
+&hold_word_caps LEFT_SHIFT 0  &kp A   &kp S   &kp D     &kp F     &kp G                                   &kp H           &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL                     &kp Z   &kp X   &kp C     &kp V     &kp B         &kp LBKT       &kp RBKT   &kp N           &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                                              &kp LALT  &kp LGUI  &lt 1 ESCAPE  &lt 4 ENTER    &kp SPACE  &tapdancelayer  &kp BSPC  &kp RGUI
             >;
         };
 
@@ -91,13 +100,23 @@
             >;
         };
 
-        layer_3 {
+        numpad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                             &trans           &kp KP_DIVIDE    &kp KP_ASTERISK  &kp LG(KP_SUBTRACT)  &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans                             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS          &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans                             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ENTER         &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT           &kp KP_COMMA  &trans
-                        &trans  &trans  &trans  &trans    &kp KP_NUMBER_0  &trans           &trans           &trans
+&none  &none  &none  &none  &none  &none                            &none            &kp KP_DIVIDE    &kp KP_ASTERISK  &kp LG(KP_SUBTRACT)  &none         &none
+&none  &none  &none  &none  &none  &none                            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS          &none         &none
+&none  &none  &none  &none  &none  &none                            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ENTER         &none         &none
+&none  &none  &none  &none  &none  &none  &none    &none            &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT           &kp KP_COMMA  &none
+                     &none  &none  &none  &none    &kp KP_NUMBER_0  &none            &none            &none
+            >;
+        };
+
+        braces {
+            bindings = <
+&none  &none          &none             &none           &none                 &none                                             &none            &none                  &none            &none              &none             &none
+&none  &kp GRAVE      &kp EXCLAMATION   &kp DQT         &kp SINGLE_QUOTE      &none                                             &none            &kp PLUS               &kp MINUS        &kp STAR           &kp SLASH         &none
+&none  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &double_it AMPERSAND                              &double_it PIPE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &none
+&none  &none          &none             &none           &none                 &none                 &kp SEMICOLON    &kp COLON  &none            &none                  &none            &none              &none             &none
+                                        &none           &none                 &none                 &none            &kp EQUAL  &none            &none                  &none
             >;
         };
     };
