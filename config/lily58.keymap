@@ -122,7 +122,7 @@
         braces {
             bindings = <
 &none  &none          &none             &none           &none                 &none                                             &none            &none                  &none            &none              &none             &none
-&none  &kp GRAVE      &kp EXCLAMATION   &kp DQT         &kp SINGLE_QUOTE      &none                                             &none            &kp PLUS               &kp MINUS        &kp STAR           &kp SLASH         &none
+&none  &kp GRAVE      &kp EXCLAMATION   &kp DQT         &kp SINGLE_QUOTE      &none                                             &kp EQUAL        &kp PLUS               &kp MINUS        &kp STAR           &kp SLASH         &none
 &none  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &double_it AMPERSAND                              &double_it PIPE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &none
 &none  &none          &none             &none           &none                 &none                 &kp SEMICOLON    &kp COLON  &none            &none                  &none            &none              &none             &none
                                         &none           &none                 &none                 &trans           &kp EQUAL  &none            &none                  &none
