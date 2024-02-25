@@ -1,4 +1,11 @@
-on: [push, pull_request, workflow_dispatch]
+on:
+  workflow_dispatch:  # can be triggered manually
+  push:               # automatically run on changes to following paths
+    paths:
+      - "config/*"
+      - "boards/*"
+      - "zephyr/*"
+      - "config/*.dtsi"
 
 jobs:
   build:
