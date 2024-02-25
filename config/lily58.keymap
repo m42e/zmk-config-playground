@@ -17,7 +17,7 @@
             bindings = <&sk>, <&caps_word>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <50>;
+            tapping-term-ms = <150>;
         };
 
         key_or_layer: key_or_layer {
