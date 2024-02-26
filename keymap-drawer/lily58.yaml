@@ -50,7 +50,7 @@ layers:
   - ','
   - .
   - /
-  - RSHFT
+  - '='
   - LALT
   - LGUI
   - {t: ESCAPE, h: raise}
