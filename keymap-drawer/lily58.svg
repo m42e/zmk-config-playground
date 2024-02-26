@@ -347,6 +347,12 @@ path.combo {
 <rect rx="6" ry="6" x="343" y="211" width="28" height="26" class="combo"/>
 <text x="357" y="224" class="combo tap">LCTRL</text>
 </g>
+<g class="combo combopos-2">
+<path d="M462,266 l93,0" class="combo"/>
+<path d="M462,266 l-93,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="253" width="28" height="26" class="combo"/>
+<text x="462" y="266" class="combo tap">lower</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 372)" class="layer-lower">
@@ -581,13 +587,11 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(350, 266) rotate(30.0)" class="key trans keypos-53">
-<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(350, 266) rotate(30.0)" class="key held keypos-53">
+<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key held"/>
 </g>
-<g transform="translate(574, 266) rotate(-30.0)" class="key trans keypos-54">
-<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(574, 266) rotate(-30.0)" class="key held keypos-54">
+<rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key held"/>
 </g>
 <g transform="translate(644, 266)" class="key trans keypos-55">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -608,6 +612,12 @@ path.combo {
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="343" y="211" width="28" height="26" class="combo"/>
 <text x="357" y="224" class="combo tap">LCTRL</text>
+</g>
+<g class="combo combopos-2">
+<path d="M462,266 l93,0" class="combo"/>
+<path d="M462,266 l-93,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="253" width="28" height="26" class="combo"/>
+<text x="462" y="266" class="combo tap">lower</text>
 </g>
 </g>
 </g>
@@ -863,6 +873,12 @@ path.combo {
 <rect rx="6" ry="6" x="343" y="211" width="28" height="26" class="combo"/>
 <text x="357" y="224" class="combo tap">LCTRL</text>
 </g>
+<g class="combo combopos-2">
+<path d="M462,266 l93,0" class="combo"/>
+<path d="M462,266 l-93,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="253" width="28" height="26" class="combo"/>
+<text x="462" y="266" class="combo tap">lower</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1117)" class="layer-numpad">
@@ -1101,6 +1117,12 @@ path.combo {
 <rect rx="6" ry="6" x="343" y="211" width="28" height="26" class="combo"/>
 <text x="357" y="224" class="combo tap">LCTRL</text>
 </g>
+<g class="combo combopos-2">
+<path d="M462,266 l93,0" class="combo"/>
+<path d="M462,266 l-93,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="253" width="28" height="26" class="combo"/>
+<text x="462" y="266" class="combo tap">lower</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1489)" class="layer-braces">
@@ -1314,6 +1336,12 @@ path.combo {
 <rect rx="6" ry="6" x="343" y="211" width="28" height="26" class="combo"/>
 <text x="357" y="224" class="combo tap">LCTRL</text>
 </g>
+<g class="combo combopos-2">
+<path d="M462,266 l93,0" class="combo"/>
+<path d="M462,266 l-93,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="253" width="28" height="26" class="combo"/>
+<text x="462" y="266" class="combo tap">lower</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1862)" class="layer-5">
@@ -1511,6 +1539,12 @@ path.combo {
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="343" y="211" width="28" height="26" class="combo"/>
 <text x="357" y="224" class="combo tap">LCTRL</text>
+</g>
+<g class="combo combopos-2">
+<path d="M462,266 l93,0" class="combo"/>
+<path d="M462,266 l-93,0" class="combo"/>
+<rect rx="6" ry="6" x="448" y="253" width="28" height="26" class="combo"/>
+<text x="462" y="266" class="combo tap">lower</text>
 </g>
 </g>
 </g>

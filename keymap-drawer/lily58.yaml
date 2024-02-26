@@ -113,8 +113,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -302,3 +302,5 @@ combos:
   k: RCTRL
 - p: [42, 53]
   k: LCTRL
+- p: [54, 53]
+  k: lower
