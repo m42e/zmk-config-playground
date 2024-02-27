@@ -12,7 +12,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - BACKSPACE
+  - '='
   - TAB
   - Q
   - W
@@ -56,8 +56,8 @@ layers:
   - {t: ESCAPE, h: raise}
   - {t: ENTER, h: braces}
   - SPACE
+  - {t: BACKSPACE, h: lower}
   - '&tapdancelayer'
-  - BSPC
   - RGUI
   lower:
   - BT CLR
@@ -113,9 +113,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   raise:
