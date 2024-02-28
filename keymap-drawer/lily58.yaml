@@ -297,7 +297,7 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - ''
-  '6':
+  umlaut:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -350,10 +350,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
@@ -363,3 +363,5 @@ combos:
   k: LCTRL
 - p: [54, 53]
   k: lower
+- p: [52, 55]
+  k: umlaut
