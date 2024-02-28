@@ -317,14 +317,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: '&umlaut_u', s: '&umlaut_capital_u'}
+  - {t: ▽, type: trans}
+  - {t: '&umlaut_o', s: '&umlaut_capital_o'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '&umlaut_a', s: '&umlaut_capital_a'}
+  - '&esszet'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -364,4 +364,4 @@ combos:
 - p: [54, 53]
   k: lower
 - p: [52, 55]
-  k: umlaut
+  k: {t: umlaut, h: sticky}

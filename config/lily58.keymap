@@ -49,6 +49,33 @@
             quick-tap-ms = <0>;
             require-prior-idle-ms = <150>;
         };
+
+        umlaut_behaviour_a: umlaut_behaviour_a {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UMLAUT_BEHAVIOUR_A";
+            bindings = <&umlaut_a>, <&umlaut_capital_a>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        umlaut_behaviour_u: umlaut_behaviour_u {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UMLAUT_BEHAVIOUR_U";
+            bindings = <&umlaut_u>, <&umlaut_capital_u>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        umlaut_behavior_o: umlaut_behavior_o {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UMLAUT_BEHAVIOR_O";
+            bindings = <&umlaut_o>, <&umlaut_capital_o>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     macros {
@@ -106,6 +133,7 @@
 
             label = "UMLAUT_O";
         };
+
         umlaut_capital_u: umlaut_capital_u {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -129,6 +157,7 @@
 
             label = "UMLAUT_U";
         };
+
         esszet: esszet {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -161,7 +190,7 @@
         };
 
         umlaut {
-            bindings = <&mo 6>;
+            bindings = <&sl 6>;
             key-positions = <52 55>;
         };
     };
@@ -252,11 +281,11 @@
 
         umlaut {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans               &trans   &trans  &trans  &trans                    &trans  &trans               &trans  &trans              &trans  &trans
+&trans  &trans               &trans   &trans  &trans  &trans                    &trans  &umlaut_behaviour_u  &trans  &umlaut_behavior_o  &trans  &trans
+&trans  &umlaut_behaviour_a  &esszet  &trans  &trans  &trans                    &trans  &trans               &trans  &trans              &trans  &trans
+&trans  &trans               &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans               &trans  &trans              &trans  &trans
+                                      &trans  &trans  &trans  &trans    &trans  &trans  &trans               &trans
             >;
         };
     };
