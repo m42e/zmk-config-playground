@@ -59,7 +59,7 @@
             label = "DOUBLE_IT";
         };
 
-        umlaut_a: umlaut_a {
+        umlaut_capital_a: umlaut_capital_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -68,7 +68,77 @@
                 <&macro_tap>,
                 <&kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N6>;
 
+            label = "UMLAUT_CAPITAL_A";
+        };
+
+        umlaut_a: umlaut_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N8>;
+
             label = "UMLAUT_A";
+        };
+
+        umlaut_capital_o: umlaut_capital_o {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N4>;
+
+            label = "UMLAUT_CAPITAL_O";
+        };
+
+        umlaut_o: umlaut_o {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N6>;
+
+            label = "UMLAUT_O";
+        };
+        umlaut_capital_u: umlaut_capital_u {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N0>;
+
+            label = "UMLAUT_CAPITAL_U";
+        };
+
+        umlaut_u: umlaut_u {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N2>;
+
+            label = "UMLAUT_U";
+        };
+        esszet: esszet {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N3>;
+
+            label = "ESSZET";
         };
     };
 
