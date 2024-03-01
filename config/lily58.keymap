@@ -192,6 +192,13 @@
         umlaut {
             bindings = <&sl 6>;
             key-positions = <52 55>;
+            layers = <0>;
+        };
+
+        back {
+            bindings = <&sl 0>;
+            key-positions = <52 55>;
+            layers = <6>;
         };
     };
 
@@ -281,11 +288,11 @@
 
         umlaut {
             bindings = <
-&trans  &trans               &trans   &trans  &trans  &trans                    &trans  &trans               &trans  &trans              &trans  &trans
-&trans  &trans               &trans   &trans  &trans  &trans                    &trans  &umlaut_behaviour_u  &trans  &umlaut_behavior_o  &trans  &trans
-&trans  &umlaut_behaviour_a  &esszet  &trans  &trans  &trans                    &trans  &trans               &trans  &trans              &trans  &trans
-&trans  &trans               &trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans               &trans  &trans              &trans  &trans
-                                      &trans  &trans  &trans  &trans    &trans  &trans  &trans               &trans
+&none  &none                &none    &none  &none  &none                  &none  &none                &none  &none               &none  &none
+&none  &none                &none    &none  &none  &none                  &none  &umlaut_behaviour_u  &none  &umlaut_behavior_o  &none  &none
+&none  &umlaut_behaviour_a  &esszet  &none  &none  &none                  &none  &none                &none  &none               &none  &none
+&none  &none                &none    &none  &none  &none  &none    &none  &none  &none                &none  &none               &none  &none
+                                     &none  &none  &none  &none    &none  &none  &none                &none
             >;
         };
     };
