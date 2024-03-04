@@ -50,7 +50,7 @@ layers:
   - ','
   - .
   - /
-  - '='
+  - {t: '=', h: RCTRL}
   - LALT
   - LGUI
   - {t: ESCAPE, h: raise, type: held}
@@ -349,12 +349,12 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - {type: held}
   - ''
   - ''
   - {type: held}
-  - ''
+  - {t: ▽, type: trans}
   - ''
 combos:
 - p: [54, 43]
