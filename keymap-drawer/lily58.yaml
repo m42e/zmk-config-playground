@@ -53,10 +53,10 @@ layers:
   - '='
   - LALT
   - LGUI
-  - {t: ESCAPE, h: raise, type: held}
+  - {t: ESCAPE, h: raise}
   - {t: ENTER, h: braces}
   - SPACE
-  - {t: BACKSPACE, h: lower, type: held}
+  - {t: BACKSPACE, h: lower}
   - '&tapdancelayer'
   - RGUI
   lower:
@@ -366,6 +366,3 @@ combos:
 - p: [52, 55]
   k: umlaut
   l: [default]
-- p: [52, 55]
-  k: {t: default, h: sticky}
-  l: [umlaut]
