@@ -199,7 +199,7 @@
         };
 
         umlaut {
-            bindings = <&sl 6>;
+            bindings = <&mo 6>;
             key-positions = <52 55>;
             layers = <0>;
         };

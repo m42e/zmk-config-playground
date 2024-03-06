@@ -364,7 +364,7 @@ combos:
 - p: [54, 53]
   k: lower
 - p: [52, 55]
-  k: {t: umlaut, h: sticky}
+  k: umlaut
   l: [default]
 - p: [52, 55]
   k: {t: default, h: sticky}

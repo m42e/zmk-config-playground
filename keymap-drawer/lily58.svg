@@ -360,7 +360,6 @@ path.combo {
 <path d="M462,266 l163,0" class="combo"/>
 <rect rx="6" ry="6" x="448" y="253" width="28" height="26" class="combo"/>
 <text x="462" y="266" class="combo tap">umlaut</text>
-<text x="462" y="277" class="combo hold">sticky</text>
 </g>
 </g>
 </g>
