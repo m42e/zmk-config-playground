@@ -350,10 +350,10 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - ''
   - ''
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
 combos:
@@ -363,6 +363,11 @@ combos:
   k: LCTRL
 - p: [54, 53]
   k: lower
-- p: [52, 55]
-  k: umlaut
-  l: [default]
+- p: [25, 54]
+  k: {t: '&umlaut_a', s: '&umlaut_capital_a'}
+- p: [19, 53]
+  k: {t: '&umlaut_u', s: '&umlaut_capital_u'}
+- p: [53, 21]
+  k: {t: '&umlaut_o', s: '&umlaut_capital_o'}
+- p: [26, 54]
+  k: '&esszet'

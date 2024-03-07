@@ -198,10 +198,24 @@
             key-positions = <54 53>;
         };
 
-        umlaut {
-            bindings = <&mo 6>;
-            key-positions = <52 55>;
-            layers = <0>;
+        combo_umlaut_a {
+            bindings = <&umlaut_behaviour_a>;
+            key-positions = <25 54>;
+        };
+
+        combo_umlaut_u {
+            bindings = <&umlaut_behaviour_u>;
+            key-positions = <19 53>;
+        };
+
+        combo_umlaut_o {
+            bindings = <&umlaut_behavior_o>;
+            key-positions = <53 21>;
+        };
+
+        combo_umlaut_s {
+            bindings = <&esszet>;
+            key-positions = <26 54>;
         };
     };
 
