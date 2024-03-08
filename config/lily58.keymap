@@ -103,7 +103,7 @@
                 <&kp LEFT_ALT>,
                 <&macro_tap>,
                 <&kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N6>,
-                <&macro_press>,
+                <&macro_release>,
                 <&kp LEFT_ALT>;
 
             label = "UMLAUT_CAPITAL_A";
@@ -116,7 +116,9 @@
                 <&macro_press>,
                 <&kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N8>;
+                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N8>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
 
             label = "UMLAUT_A";
         };
@@ -128,7 +130,9 @@
                 <&macro_press>,
                 <&kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N4>;
+                <&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N4>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
 
             label = "UMLAUT_CAPITAL_O";
         };
@@ -140,7 +144,9 @@
                 <&macro_press>,
                 <&kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N6>;
+                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N6>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
 
             label = "UMLAUT_O";
         };
@@ -152,7 +158,9 @@
                 <&macro_press>,
                 <&kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N0>;
+                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N0>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
 
             label = "UMLAUT_CAPITAL_U";
         };
@@ -164,7 +172,9 @@
                 <&macro_press>,
                 <&kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N2>;
+                <&kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N2>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
 
             label = "UMLAUT_U";
         };
@@ -176,7 +186,9 @@
                 <&macro_press>,
                 <&kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N3>;
+                <&kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
 
             label = "ESSZET";
         };
@@ -299,7 +311,7 @@
             bindings = <
 &none  &none                &none    &none  &none   &none                   &none   &none                &none  &none               &none  &none
 &none  &none                &none    &none  &none   &none                   &none   &umlaut_behaviour_u  &none  &umlaut_behavior_o  &none  &none
-&none  &umlaut_behaviour_a  &esszet  &none  &none   &none                   &none   &none                &none  &none               &none  &none
+&trans  &umlaut_behaviour_a  &esszet  &none  &none   &none                   &none   &none                &none  &none               &none  &trans
 &none  &none                &none    &none  &none   &none   &none    &none  &none   &none                &none  &none               &none  &none
                                      &none  &trans  &trans  &none    &none  &trans  &trans               &none
             >;

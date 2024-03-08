@@ -322,7 +322,7 @@ layers:
   - {t: '&umlaut_o', s: '&umlaut_capital_o'}
   - ''
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - {t: '&umlaut_a', s: '&umlaut_capital_a'}
   - '&esszet'
   - ''
@@ -333,7 +333,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
