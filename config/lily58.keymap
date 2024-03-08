@@ -102,7 +102,9 @@
                 <&macro_press>,
                 <&kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N6>;
+                <&kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N6>,
+                <&macro_press>,
+                <&kp LEFT_ALT>;
 
             label = "UMLAUT_CAPITAL_A";
         };
@@ -182,16 +184,6 @@
 
     combos {
         compatible = "zmk,combos";
-
-        ctrl_right {
-            bindings = <&kp RCTRL>;
-            key-positions = <54 43>;
-        };
-
-        lctrl {
-            bindings = <&kp LCTRL>;
-            key-positions = <42 53>;
-        };
 
         layer1_thumbds {
             bindings = <&mo 1>;

@@ -357,10 +357,6 @@ layers:
   - {t: ▽, type: trans}
   - ''
 combos:
-- p: [54, 43]
-  k: RCTRL
-- p: [42, 53]
-  k: LCTRL
 - p: [54, 53]
   k: lower
 - p: [25, 54]
