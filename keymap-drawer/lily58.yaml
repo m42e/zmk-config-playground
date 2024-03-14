@@ -57,7 +57,7 @@ layers:
   - {t: ENTER, h: braces}
   - SPACE
   - {t: BACKSPACE, h: lower}
-  - '&tapdancelayer'
+  - {t: '5', h: toggle}
   - RGUI
   lower:
   - BT CLR
@@ -133,10 +133,10 @@ layers:
   - {t: ▽, type: trans}
   - '`'
   - {t: ▽, type: trans}
-  - '2'
-  - '3'
-  - '4'
-  - '5'
+  - ''
+  - ''
+  - ''
+  - ''
   - HOME
   - PAGE DOWN
   - PAGE UP
@@ -292,69 +292,10 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - {t: '5', h: toggle}
+  - {t: '5', h: toggle}
   - {t: ▽, type: trans}
   - ''
-  - ''
-  umlaut:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: '&umlaut_u', s: '&umlaut_capital_u'}
-  - ''
-  - {t: '&umlaut_o', s: '&umlaut_capital_o'}
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: '&umlaut_a', s: '&umlaut_capital_a'}
-  - '&esszet'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - ''
 combos:
 - p: [54, 53]
